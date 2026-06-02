@@ -1,0 +1,122 @@
+/* styles.css
+   Explicado para principiantes: cada bloque tiene un comentario breve.
+   Este CSS usa variables, tipografía simple y clases semánticas para que
+   puedas cambiar colores y tamaños fácilmente.
+*/
+
+/* ---------- Variables: cambia aquí los colores y tamaños ---------- */
+:root {
+  --bg: #f5f7fb;         /* color de fondo de la página */
+  --card: #ffffff;       /* fondo de las tarjetas */
+  --accent: #0b7285;     /* color principal (botones, títulos) */
+  --text: #0f1724;       /* color del texto principal */
+  --muted: #6b7280;      /* color para textos secundarios */
+  --radius: 12px;        /* radio de los bordes redondeados */
+  --max-width: 900px;    /* ancho máximo del contenido */
+}
+
+/* ---------- Estilos globales básicos ---------- */
+/* Se aplican a toda la página */
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, var(--bg), #eef3f9 60%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Contenedor central que centra y limita el ancho */
+.container {
+  max-width: var(--max-width);
+  margin: 36px auto;
+  padding: 24px;
+}
+
+/* Encabezado del sitio: título y subtítulo */
+.site-header {
+  text-align: left;
+  margin-bottom: 18px;
+}
+.site-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.9rem; /* tamaño del título */
+  color: var(--text);
+  text-transform: capitalize; /* pone mayúscula inicial en cada palabra */
+  letter-spacing: -0.5px;
+}
+.tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Tarjetas que contienen cada sección: fondo blanco, sombra y padding */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 36, 0.06);
+  margin-bottom: 14px;
+  border: 1px solid rgba(15, 23, 36, 0.04);
+}
+
+/* Encabezados dentro de las tarjetas */
+.card h2, .card h3 {
+  margin: 0 0 8px 0;
+  color: var(--accent);
+}
+.card h2 {
+  font-size: 1.2rem;
+}
+.card h3 {
+  font-size: 1rem;
+}
+
+/* Párrafos con buena lectura */
+.card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Pie de página sencillo y discreto */
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+/* ---------- Utilidades y pequeños toques visuales ---------- */
+/* Enlaces con el color principal */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* Botón simple (por si lo agregas después) */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive: ajustar espacio para pantallas pequeñas */
+@media (max-width: 520px) {
+  .container { padding: 16px; margin: 18px auto; }
+  .site-header h1 { font-size: 1.4rem; }
+}
+
+/* ---------- Consejos para principiantes (no son CSS) ----------
+- Cambia los valores en :root para personalizar colores rápidamente.
+- Usa clases como "card" para agrupar contenido que quieres que tenga el mismo estilo.
+- Si modificas el HTML, mantén la estructura semántica (header, main, section, footer).
+------------------------------------------------------------------ */
