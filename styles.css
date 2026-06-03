@@ -120,3 +120,73 @@ a:hover { text-decoration: underline; }
 - Usa clases como "card" para agrupar contenido que quieres que tenga el mismo estilo.
 - Si modificas el HTML, mantén la estructura semántica (header, main, section, footer).
 ------------------------------------------------------------------ */
+
+
+.btnPerfil {}
+    .seccion-candidatos{
+    
+    background:rgb(255, 251, 251);
+    
+    padding:20px;
+    
+    border-radius:10px;
+    
+    }
+    
+    .contenedor-candidatos{
+    
+    display:grid;
+    
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    
+    gap:18px;
+    
+    margin-top:20px;
+    
+    }
+    
+    .tarjeta-candidato{
+    
+    border:1px solid #ddd;
+    
+    border-left:5px solid #8A1538;
+    
+    border-radius:10px;
+    
+    padding:18px;
+    
+    background:#fff;
+    
+    }
+    
+    .tarjeta-candidato h3{
+    
+    color:#8A1538;
+    
+    margin-top:0;
+    
+    }
+    
+    .tarjeta-candidato button{
+    
+    margin-top:10px;
+    
+    padding:8px;
+    
+    cursor:pointer;
+    
+    }
+    
+    .detalle-perfil{
+    
+    margin-top:20px;
+    
+    padding:15px;
+    
+    background:#fdfcfc;
+    
+    border-left:5px solid #C2185B;
+    
+    border-radius:8px;
+  }
