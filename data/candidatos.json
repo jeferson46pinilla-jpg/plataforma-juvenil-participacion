@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": 1780593838408,
+    "nombre": "jeferson",
+    "rol": "veedor",
+    "propuesta": "garantizar derechos",
+    "estado": "perfil de practica academica"
+  },
+  {
+    "id": 1780593893972,
+    "nombre": "picachu",
+    "rol": "veedor",
+    "propuesta": "¡trificar con mucha energia los derechos!",
+    "estado": "perfil de practica academica"
+  },
+  {
+    "id": 1780594293727,
+    "nombre": "fabio",
+    "rol": "veedor",
+    "propuesta": "Diseñar al mundo democratico",
+    "estado": "perfil de practica academica"
+  }
+]
