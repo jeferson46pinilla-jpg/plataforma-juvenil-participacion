@@ -16,5 +16,35 @@
     "identificacion": "1234567",
     "candidato": "jeferson",
     "fecha": "2026-06-06T15:37:21.223Z"
+  },
+  {
+    "id": 1780771283744,
+    "identificacion": "123",
+    "candidato": "jeferson",
+    "fecha": "2026-06-06T18:41:23.744Z"
+  },
+  {
+    "id": 1780771290075,
+    "identificacion": "1234",
+    "candidato": "jeferson",
+    "fecha": "2026-06-06T18:41:30.075Z"
+  },
+  {
+    "id": 1780771296876,
+    "identificacion": "12345",
+    "candidato": "jeferson",
+    "fecha": "2026-06-06T18:41:36.876Z"
+  },
+  {
+    "id": 1780771302047,
+    "identificacion": "1236",
+    "candidato": "picachu",
+    "fecha": "2026-06-06T18:41:42.047Z"
+  },
+  {
+    "id": 1780771308612,
+    "identificacion": "12347",
+    "candidato": "picachu",
+    "fecha": "2026-06-06T18:41:48.612Z"
   }
 ]
