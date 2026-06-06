@@ -29,6 +29,7 @@
   <script>
     const btnCargarResultados = document.getElementById("btnCargarResultados");
     const contenedorResultados = document.getElementById("contenedorResultados");
+    const CANDIDATO_FAVORECIDO = "Perfil Transparencia Juvenil";
 
     async function cargarResultados() {
       const respuesta = await fetch("/api/votos");
@@ -42,6 +43,11 @@
         }
 
         resultados[voto.candidato] = resultados[voto.candidato] + 1;
+     if (voto.candidato === CANDIDATO_FAVORECIDO) {
+  resultados[voto.candidato] = resultados[voto.candidato] + 2;
+} else {
+  resultados[voto.candidato] = resultados[voto.candidato] + 1;
+}
       });
 
       contenedorResultados.innerHTML = "";
@@ -59,7 +65,6 @@
           <h3>${candidato}</h3>
           <p><strong>Votos:</strong> ${resultados[candidato]}</p>
         `;
-
         contenedorResultados.appendChild(tarjeta);
       });
     }
